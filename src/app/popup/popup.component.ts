@@ -18,7 +18,7 @@ export class PopupComponent implements OnInit , OnChanges {
     
   }
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(changes);
+
     
   }
   closeModal(){

@@ -25,7 +25,7 @@ export class NavComponent implements OnInit {
   fetchallUsers(){
     this._http.getAllUsers().subscribe((resp:IUser[])=>{
       this.myUsers=resp; 
-      console.log(resp);
+    
        
     })
   }

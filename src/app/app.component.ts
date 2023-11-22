@@ -12,7 +12,7 @@ export class AppComponent {
   userPosts:IPost[]|undefined;
   userName:string|undefined;
   getUserData(eventData:IPost[]){
-      // console.log(eventData);
+
       this.userPosts=eventData
       
   }

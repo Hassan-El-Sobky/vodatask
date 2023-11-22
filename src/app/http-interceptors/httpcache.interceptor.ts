@@ -24,14 +24,14 @@ export class HttpcacheInterceptor implements HttpInterceptor {
     const cachedResponse= this._cache.get(`${request.url}?${request.params}`);
     
     if(cachedResponse){
-      console.log(cachedResponse);
+    
 
       return of(cachedResponse);
     }
      
     return next.handle(request).pipe(
       tap((event:HttpEvent<any>)=>{
-        console.log(event);
+      
         
         if(event.type === HttpEventType.Response ){
           this._cache.saveCache(`${request.url}?${request.params}`,event)
