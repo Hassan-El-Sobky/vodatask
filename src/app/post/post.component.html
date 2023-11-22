@@ -1,0 +1,29 @@
+<section class="posts-wrapper my-5">
+
+    
+    <div class="container">
+    <h3>All Posts</h3>
+    <div class="row ">
+        <div *ngFor="let post of posts" class="col-md-12 my-2">
+            <div class="row align-items-center">
+                <div class="col-md-6 my-3">
+                    <img  src="../../assets/images/post.png" class="w-100  " alt="post-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="useravatar">
+                       <img [src]="userImg" class="rounded-circle" alt="useravatar">
+                        <h6>{{userName}}</h6> 
+                    </div>
+                <h3>{{post.title}} </h3>
+                <p>{{post.body | slice:0:50}}.....</p>
+                 <button (click)="viewComments(post.id)" class="btn-comment"> View Comments </button>    
+            </div> 
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-popup *ngIf="popupState"  [comments]="postComments"  />
+
+</section>

@@ -1,0 +1,19 @@
+.posts-wrapper{
+    .useravatar{
+         display: flex;
+         align-items: center;
+         gap: 10px;
+         img {
+            width: 10%;
+         }
+    }
+
+    .btn-comment{
+        border:1px #C40000 solid ;
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius:8px ;
+    
+    }
+}
+

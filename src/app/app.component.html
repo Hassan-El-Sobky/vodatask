@@ -1,0 +1,4 @@
+<navbar (newUserNameEvent)="getuserName($event)" (newItemEvent)="getUserData($event)"></navbar>
+<section [class.welcome]="!userPosts">
+<app-post *ngIf="userPosts" [userName]="userName" [posts]="userPosts"></app-post>
+</section>

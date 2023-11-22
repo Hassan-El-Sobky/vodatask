@@ -1,0 +1,19 @@
+<div class="popup-container">
+
+    <div class="comments">
+        <button (click)="closeModal()" class="btn-close float-end"></button>
+        <div class="clearfix"></div>
+      <div class="container">
+        <div class="row">
+            <div *ngFor="let comm of comments" class="col-md-12 my-2">
+                <div class=comments-wrapper>
+                    <h6 class="commenter">{{comm.email}}</h6>
+                    <p>{{comm.body}}</p>
+                </div>
+            </div>
+        </div>
+      </div>
+     
+    </div>
+
+</div>

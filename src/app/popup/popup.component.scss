@@ -1,0 +1,74 @@
+.popup-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1031;
+
+    .comments{
+        background-color: #fff;
+        width: 47vw;
+        padding: 20px 30px;
+        border-radius: 10px;
+        &-wrapper{
+             border: 1px solid red;
+             border-radius: 8px;
+             padding: 10px;
+             position: relative;
+             .commenter{
+                position: absolute;
+                top: -10px;
+                background-color: white;
+                padding: 2px 12px;
+              
+             }
+        }
+        .btn-close{
+        
+        }
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .popup-container{
+    
+    
+        .comments{
+            width: 50vw;
+            height: 50vw;
+            overflow: scroll;
+            padding: 20px 30px;
+            border-radius: 10px;
+       
+        }
+    }
+    
+   
+}
+
+
+
+@media screen and (max-width:768px) {
+
+    .popup-container{
+    
+    
+        .comments{
+            width: 70vw;
+            height: 70vw;
+            overflow: scroll;
+            padding: 20px 30px;
+            border-radius: 10px;
+       
+        }
+    }
+    
+   
+}
